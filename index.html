@@ -4,7 +4,7 @@
     <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YaVino</title>
+    <title>YAVINO</title>
 
     <!-- Tipografía desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <!-- Logo o nombre del sitio -->
-    <a class="navbar-brand" href="#">YaVino</a>
+    <a class="navbar-brand" href="#">YAVINO</a>
     <!-- Botón para mostrar menú en mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -102,23 +102,107 @@
   </div>
 </section>
 
-<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
-<section class="section-spacing container">
-  <div class="row align-items-center">
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="imagen brindis-05.png" class="img-fluid img-rounded" alt="Imagen ilustrativa" style="width: 450px; height: 450px;">
-    </div>
-    <!-- Columna de texto -->
-    <div class="col-lg-6">
-      <h2 class="display-5" class="h2-custom" style="font-weight: bolder; color: black;">¿Por qué elegirnos?</h2>
-      <p class="lead-custom" style="font-weight: bolder; color: black;" >Calidad garantizada</p> 
-      <p class="lead-custom">Vinos especialmente seleccionados por expertos sommeliers.</p>
-      <p class="lead-custom" style="font-weight: bolder; color: black;" >Contenido exclusivo</p> 
-      <p class="lead-custom">Material de cata digital y fichas sensoriales incluido en cada caja, para vivir la experiencia completa.</p>
-      <p class="lead-custom" style="font-weight: bolder; color: black;" >¡Envío gratis!</p> 
-      <p class="lead-custom">Recibí todos los meses tu caja de vinos directo en tu casa.</p>
-    </div>
+<section class="why-section">
+  <style>
+    .why-section {
+      display: flex;
+      align-items: center;
+      padding: 150px;
+      gap: 60px;
+      background-color: #efeded;
+      font-family: Poppins, sans-serif;
+      font-weight: bolder;
+    }
+    .why-image {
+      flex: 1;
+    }
+    .why-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      object-fit: cover;
+    }
+    .why-content {
+      flex: 1;
+    }
+    .why-content h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #111;
+    }
+    .why-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .why-list li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+    .why-list li .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+    .why-list li .text h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #222;
+    }
+    .why-list li .text p {
+      margin: 4px 0 0;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #838282;
+      font-weight: lighter;
+    }
+    @media (max-width: 768px) {
+      .why-section {
+        flex-direction: column;
+        padding: 20px;
+      }
+      .why-image, .why-content {
+        width: 100%;
+      }
+      .why-content h2 {
+        text-align: center;
+      }
+    }
+  </style>
+
+  <div class="why-image">
+    <img src="imagen brindis-05.png" alt="Brindis con copas de vino" style="width: 500px; height: 500px;">
+  </div>
+
+  <div class="why-content" >
+    <h2>¿Por qué elegirnos?</h2>
+    <ul class="why-list">
+      <li>
+        <img class="icon" src="Tic (2).png" alt="check" style="width: 40px; height: 40px;">
+        <div class="text">
+          <h3>Calidad garantizada</h3>
+          <p>Vinos especialmente seleccionados por expertos sommeliers.</p>
+        </div>
+      </li>
+      <li>
+        <img class="icon" src="Tic (2).png" alt="check" style="width: 40px; height: 40px;">
+        <div class="text">
+          <h3>Contenido exclusivo</h3>
+          <p>Material de cata digital y fichas sensoriales incluido en cada caja, para vivir la experiencia completa.</p>
+        </div>
+      </li>
+      <li>
+        <img class="icon" src="Tic (2).png" alt="check" style="width: 40px; height: 40px;">
+        <div class="text">
+          <h3>¡Envío gratis!</h3>
+          <p>Recibí todos los meses tu caja de vinos directo en tu casa.</p>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -234,7 +318,7 @@
     </p>
   </div>
   <div class="wineswap-graphic">
-    <img src="wineswap-08.png" alt="Flechas" class="flechas" style="max-width: 300px;">
+    <img src="wineswap-08.png" alt="Flechas" class="flechas" style="max-width: 400px;">
   </div>
 </section>
 
@@ -250,6 +334,142 @@
     </p>
   </div>
 </section>
+
+<section class="brands-section">
+  <style>
+    .brands-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .brands-section .brands-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .brands-section .brand {
+      flex: 1 1 150px;
+      max-width: 200px;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+    .brands-section .brand img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .brands-section .brand:hover {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .brands-section {
+        padding: 20px 10px;
+      }
+      .brands-section .brands-container {
+        gap: 20px;
+      }
+      .brands-section .brand {
+        flex: 1 1 120px;
+        max-width: 150px;
+      }
+    }
+  </style>
+
+  <div class="brands-container">
+    <div class="brand"><img src="Logo1.png" alt="Sierra Norte"></div>
+    <div class="brand"><img src="Logo2.png" alt="Familia Torres"></div>
+    <div class="brand"><img src="Logo3.png" alt="Trivento"></div>
+    <div class="brand"><img src="Logo4.png" alt="Santa Julia"></div>
+  </div>
+</section>
+
+
+
+
+<div class="testimonios-section" style="color: white;">
+  <h2>Comunidad</h2>
+  <p style="color: white;" >Conocé la opinión de nuestros suscriptores</p>
+
+  <div class="testimonios-container">
+    <div class="tarjeta">
+      <div class="estrellas">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+      </div>
+      <p>“Gracias a este servicio, mis cenas ahora tienen otro nivel...”</p>
+      <strong>Delfina L.</strong>
+    </div>
+
+    <div class="tarjeta">
+      <div class="estrellas">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+      </div>
+      <p>“La presentación es sobria y elegante, ideal también para regalar...”</p>
+      <strong>Juan Pablo S.</strong>
+    </div>
+
+    <div class="tarjeta">
+      <div class="estrellas">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+        <img src="estrella (2).png" alt="star" style="width: 30px; height: 30px;">
+      </div>
+      <p>“La selección siempre me sorprende y me hace descubrir nuevas bodegas...”</p>
+      <strong>Lautaro M.</strong>
+    </div>
+  </div>
+</div>
+
+
+<div class="contacto">
+  <div class="formulario">
+    <h2>¡Contactános!</h2>
+    <form>
+      <input type="text" placeholder="Nombre y Apellido...">
+      <input type="email" placeholder="Correo electrónico...">
+      <textarea placeholder="Comentarios o dudas..."></textarea>
+      <button type="submit">Enviar!</button>
+    </form>
+  </div>
+  <div class="imagen-zorro"></div>
+</div>
+
+
+
+<section class="faq-section">
+  <h2 style="font-family: 'Poppins', sans-serif; font-weight: bolder;" >Preguntas frecuentes</h2>
+  <div class="faq-container">
+    <div class="faq-item">¿Puedo elegir los vinos que me llegan?</div>
+    <div class="faq-item">¿Qué pasa si no estoy en casa al momento de la entrega?</div>
+    <div class="faq-item">¿Hay compromiso de permanencia?</div>
+    <div class="faq-item">¿Puedo regalar una suscripción?</div>
+    <div class="faq-item">¿Hacen envíos a todo el país?</div>
+    <div class="faq-item">¿Qué hago si tengo botellas duplicadas?</div>
+  </div>
+</section>
+
+
+<footer class="faq-footer">
+  <h3>YAVINO</h3>
+  <p>BODEGA A DOMICILIO</p>
+  <div class="social-icons">
+    <a href="#">✉</a>
+    <a href="#">📘</a>
+    <a href="#">📸</a>
+  </div>
+</footer>
 
 
 
@@ -829,6 +1049,26 @@
   </div>
 </section>
 <!-- /CONTACT FORM -->
+
+<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+<section class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+      <img src="imagen brindis-05.png" class="img-fluid img-rounded" alt="Imagen ilustrativa" style="width: 450px; height: 450px;">
+    </div>
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <h2 class="display-5" class="h2-custom" style="font-weight: bolder; color: black;">¿Por qué elegirnos?</h2>
+      <p class="lead-custom" style="font-weight: bolder; color: black;" >Calidad garantizada</p> 
+      <p class="lead-custom">Vinos especialmente seleccionados por expertos sommeliers.</p>
+      <p class="lead-custom" style="font-weight: bolder; color: black;" >Contenido exclusivo</p> 
+      <p class="lead-custom">Material de cata digital y fichas sensoriales incluido en cada caja, para vivir la experiencia completa.</p>
+      <p class="lead-custom" style="font-weight: bolder; color: black;" >¡Envío gratis!</p> 
+      <p class="lead-custom">Recibí todos los meses tu caja de vinos directo en tu casa.</p>
+    </div>
+  </div>
+</section>
 
 <!-- FOOTER: Pie de página -->
 <footer class="text-center py-4">
