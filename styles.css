@@ -327,3 +327,79 @@ img.rounded-circle {
     column-count: 1;
   }
 }
+
+.yv-banner {
+  position: relative;
+  background: url('banner-09.png') center/cover no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.yv-banner__content {
+  position: relative;
+  color: #fff;
+  max-width: 90%;
+  padding: 0 1rem;
+}
+
+.yv-banner__title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.yv-banner__subtitle {
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+}
+
+/* Versión responsive */
+@media (min-width: 768px) {
+  .yv-banner {
+    height: 500px;
+  }
+  .yv-banner__title {
+    font-size: 2.5rem;
+  }
+  .yv-banner__subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+
+.wineswap {
+  background-color: #efeded;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.wineswap h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.wineswap p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.wineswap-graphic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.wineswap-graphic img {
+  max-width: 100px;
+  height: auto;
+}
