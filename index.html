@@ -406,7 +406,7 @@
 <section class="brands-section">
   <style>
     .brands-section {
-      padding: 10px 30px;
+      padding: 40px 20px;
       text-align: center;
     }
     .brands-section .brands-container {
@@ -414,7 +414,7 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 40px;
+      gap: 100px;
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -438,7 +438,7 @@
         padding: 20px 10px;
       }
       .brands-section .brands-container {
-        gap: 20px;
+        gap: 0px;
       }
       .brands-section .brand {
         flex: 1 1 120px;
@@ -457,6 +457,102 @@
 
 
 
+
+
+
+
+
+
+<!-- VIDEO -->
+<section class="seccion-video">
+  <!-- VIDEO A LA IZQUIERDA -->
+  <video id="videoFondo" autoplay muted loop playsinline>
+    <source src="imagenes/video.mov" type="video/mp4">
+    Tu navegador no soporta el video.
+  </video>
+
+  <!-- TEXTO A LA DERECHA -->
+  <div class="contenido">
+    <h2>Mundo nuevo, lenguaje nuevo </h2>
+    <p>Todo el vocabulario que tenés que conocer para comenzar a catar como un experto.</p>
+
+    <!-- BOTÓN DE ACCIÓN -->
+    <button onclick="alert('¡Acción realizada!')">
+      Ver video completo
+    </button>
+  </div>
+</section>
+
+<!-- ✅ ESTILOS -->
+<style>
+  .seccion-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 150px 50px;
+    padding-top: 200px;
+    flex-wrap: wrap;
+  }
+
+  .seccion-video video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .seccion-video .contenido {
+    max-width: 500px;
+  }
+
+  .seccion-video .contenido h2 {
+    margin-top: 0;
+  }
+
+  .seccion-video .contenido button {
+    display: block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .seccion-video {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .seccion-video video {
+      max-width: 100%;
+    }
+
+    .seccion-video .contenido button {
+      margin: 15px auto 0 auto;
+    }
+  }
+</style>
+
+<!-- ✅ SCRIPT PARA PAUSAR/REPRODUCIR Y ACTIVAR SONIDO -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const video = document.getElementById('videoFondo');
+
+    video.addEventListener('click', function () {
+      if (video.paused) {
+        video.muted = false;  // Activar sonido
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  });
+</script>
 
 
 
