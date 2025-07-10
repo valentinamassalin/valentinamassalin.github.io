@@ -1,7 +1,7 @@
 /* 1. VARIABLES DE DISEÑO */
 :root {
   --primary-color: #3cb0b2;
-  --secondary-color: #6c757d;
+  --secondary-color: #686868;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
   --font-family-base: 'Poppins', sans-serif;
@@ -227,6 +227,16 @@ img.rounded-circle {
   color: var(--dark-color);
 }
 
+.h5-custom {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: black;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: bold;
+}
+
+
 /* PÁRRAFOS Y TEXTOS */
 .p-custom {
   font-size: 1rem;
@@ -235,7 +245,7 @@ img.rounded-circle {
 }
 
 .lead-custom {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--secondary-color);
 }
@@ -281,6 +291,8 @@ img.rounded-circle {
 .section-spacing {
   padding-top: 100px;
   padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .section-spacing-sm {
@@ -317,10 +329,32 @@ img.rounded-circle {
   }
 }
 
+
+
+
+
+
+
+
+/* PLANES DE SUSCRIPCION */
+.fondo-planes {
+  background-image: url("imagenes/negroo-35.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}  
+ 
+
+
+
+
+/* BANNER */
+
 .yv-banner {
   position: relative;
   background: url('imagenes/banner.png') center/cover no-repeat;
-  height: 500px;
+  min-height: 100vh;
+  height: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,7 +370,7 @@ img.rounded-circle {
 
 .yv-banner__title {
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 900;
   margin: 0;
 }
 
@@ -359,11 +393,17 @@ img.rounded-circle {
 }
 
 
+
+
+
+
+/* WINESWAP */
+
 .wineswap {
   background-color: #efeded;
-  padding: 60px 20px;
+  padding: 90px 20px;
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .wineswap h2 {
@@ -375,9 +415,9 @@ img.rounded-circle {
 .wineswap p {
   font-size: 1rem;
   max-width: 600px;
-  margin: 0 auto 40px;
+  margin: 0 auto 0px;
   line-height: 1.5;
-  color: #333;
+  color: #000000;
 }
 
 .wineswap-graphic {
@@ -394,13 +434,18 @@ img.rounded-circle {
 }
 
 
+
+
+
+/* OPINIONES */
+
 .testimonios-section {
   text-align: center;
   color: white;
-  padding: 60px 20px;
+  padding: 140px 20px;
 
   /* Fondo con imagen */
-  background-image: url('fondo\ testimonios.png');
+ background: url('imagenes/fondo\ comentarios.png') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -409,7 +454,7 @@ img.rounded-circle {
 .testimonios-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   flex-wrap: wrap;
   margin-top: 20px;
 }
@@ -417,7 +462,7 @@ img.rounded-circle {
 .tarjeta {
   background-color: white;
   color: #333;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   width: 300px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -425,8 +470,8 @@ img.rounded-circle {
 }
 
 .estrellas img {
-  width: 20px;
-  margin: 0 2px;
+  width: 0px;
+  margin: 0px;
 }
 
 
@@ -437,26 +482,29 @@ img.rounded-circle {
 .contacto {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 60px 40px;
+  justify-content: space-between;  
+  padding: 90px 0;
   font-family: sans-serif;
 }
 
 .formulario {
   flex: 1;
   max-width: 500px;
+   margin: 0 auto 0 100px;
 }
 
 .formulario h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   font-weight: 800;
+  margin-left: 25px;
 }
 
 .formulario form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin: 20px;
 }
 
 .formulario input,
@@ -484,7 +532,7 @@ img.rounded-circle {
   background-image: url('imagenes/zorro\ costado.png'); 
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   height: 400px;
 }
 
@@ -499,7 +547,6 @@ img.rounded-circle {
 /* --- FAQ Section --- */
 .faq-section {
   padding: 60px 20px;
-  background-color: #fff;
   text-align: center;
 }
 
@@ -539,12 +586,20 @@ img.rounded-circle {
   transition: transform 0.3s;
 }
 
+
+
+
+
 /* --- Footer Section --- */
 .faq-footer {
-  background-color: #000;
-  color: #fff;
+  background-color: #0a0e0d; /* negro real */
+  background-image: url("imagenes/footer.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
   text-align: center;
-  padding: 30px 20px;
+  padding: 60px 20px 60px; /* más espacio arriba para mostrar el trazo */
+  color: #ffffff;
 }
 
 .faq-footer h3 {
@@ -553,8 +608,9 @@ img.rounded-circle {
 }
 
 .faq-footer p {
-  margin: 5px 0 15px;
+  margin: 0px 0 15px;
   font-size: 14px;
+  color: #ffffff;
 }
 
 .social-icons a {
