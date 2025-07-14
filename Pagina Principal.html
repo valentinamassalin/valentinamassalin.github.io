@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAVINO</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+  
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="#">YAVINO</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Cómo funciona</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Beneficios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Opiniones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+
+
+
+
+
+
+<!-- HERO -->
+<section class="section-spacing container d-flex align-items-center justify-content-between" style="min-height: 100vh; padding-top: 100px;">
+  <div class="row align-items-center">
+    <!-- Texto principal -->
+    <div class="col-lg-6">
+      <h1 class="h1-custom;" style="color: black; font-weight: 700; padding-bottom: 0px ;">DESCUBRÍ EL MUNDO DEL VINO, UN MES A LA VEZ</h1>
+      <p class="h5-custom" style="padding-top: 0px;">Conocé los mejores vinos, y descubrí lo que te genera a vos. <br> ¿Te animás a sumarte a la banda? </p>
+      <div>
+        <a href="paginadetalle.html" class="btn btn-dark" style="background-color: #288b8d;">Unirme al Club</a>
+      </div>
+    </div>
+    <!-- Imagen destacada -->
+    <div class="col-lg-6 text-center">
+      <img src="imagenes/img hero.png" class="img-fluid img-rounded" alt="Imagen Hero">
+    </div>
+  </div>
+</section>
+<!-- /HERO -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- COMO FUNCIONA YAVINO -->
+<section class="section-spacing container text-center" style="padding-top: 50px;">
+  <h2 class="h2-custom" style="color: black;">¿Cómo funciona YaVino?</h2>
+  <div class="row">
+    <!-- Tres columnas informativas -->
+    <div class="col-md-4">
+      <img src="imagenes/icono mano.png" class="img-fluid img-rounded" alt="Imagen Hero" style="width: 200px; height: 200px; padding-bottom: 10px;">
+      <h4 class="h4-custom" style="color: black;">Suscribite</h4>
+      <p class="p-custom">Elegí qué plan se ajusta <br> mejor a tus gustos</p>
+    </div>
+    <div class="col-md-4">
+      <img src="imagenes/icono recibi caja.png" class="img-fluid img-rounded" alt="Imagen Hero" style="width: 200px; height: 200px;">
+      <h4 class="h4-custom" style="color: black;" >Recibí</h4>
+      <p class="p-custom" >Te llega todos los meses <br> a la puerta de tu casa</p>
+    </div>
+    <div class="col-md-4">
+     <img src="imagenes/icono disfruta.png" class="img-fluid img-rounded" alt="Imagen Hero" style="width: 200px; height: 200px;">
+      <h4 class="h4-custom" style="color: black;" >Disfrutá</h4>
+      <p class="p-custom">Degustá desde la <br> comodidad de tu hogar</p>
+    </div>
+  </div>
+</section>
+<!-- /ABOUT -->
+
+
+
+
+
+
+
+
+
+<!-- POR QUE ELEGIRNOS -->
+<section class="why-section mancha1">
+  <div class="why-image">
+    <img src="imagenes/imagen brindis.png" alt="Brindis con copas de vino" style="width: 600px; height: 400px; padding-left: 0px;">
+  </div>
+
+  <div class="why-content" >
+    <h2 class="h2-custom" style="color: black;">¿Por qué elegirnos?</h2>
+    <ul class="why-list">
+      <li>
+        <img class="icon" src="imagenes/icono tic.png" alt="check" style="width: 50px; height: 50px;">
+        <div class="text" style="padding-top: 8px;">
+          <h3>Calidad garantizada</h3>
+          <p>Vinos especialmente seleccionados por expertos sommeliers.</p>
+        </div>
+      </li>
+      <li>
+        <img class="icon" src="imagenes/icono tic.png" alt="check" style="width: 50px; height: 50px;">
+        <div class="text" style="padding-top: 8px;">
+          <h3>Contenido exclusivo</h3>
+          <p>Material de cata digital y fichas sensoriales incluido en cada caja, <br> para vivir la experiencia completa.</p>
+        </div>
+      </li>
+      <li>
+        <img class="icon" src="imagenes/icono tic.png" alt="check" style="width: 50px; height: 50px;">
+        <div class="text" style="padding-top: 8px;">
+          <h3>¡Envío gratis!</h3>
+          <p>Recibí todos los meses tu caja de vinos directo en tu casa.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- SOBRE NOSOTROS -->
+
+<section class="sobre-nosotros" >
+  <div class="row align-items-center container" style="padding: 0px 0px 100px 120px;">
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <h2 class="h2-custom">Sobre Nosotros</h2>
+      <p class="lead-custom" >Somos un club de vinos pensado para quienes disfrutan descubrir nuevas etiquetas sin complicarse. Por eso, cada mes seleccionamos y enviamos vinos únicos, directo a tu puerta. Vos relajate y disfrutá, nosotros nos encargamos de lo demás. <br> <br> Bienvenido al lado simple del vino. Bienvenido a YaVino.</p>
+    </div>
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mt-4 mt-lg-0" >
+      <img src="imagenes/hombre.png" class="img-fluid img-rounded" alt="Imagen ilustrativa" style="width: 500px; height: 500px;">
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- PLANES DE SUSCRIPCIÓN -->
+<section class="planes container-fluid text-center" style="background-color: #000000;" >
+  <h2 class="h2-custom" style="color: white;">PLANES DE SUSCRIPCIÓN</h2>
+  <p class="p-custom" style="color: white;">Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
+  
+  <div class="row mt-5">
+    
+    <!-- Card: Plan Básico -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100" style="background-color:#efeded;">
+
+        <!-- Imagen ilustrativa -->
+        <img src="imagenes/img fox.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+
+        <!-- Imagen ilustrativa -->
+        <img src="imagenes/caja zorro.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+
+        <!-- Descripción -->
+        <p class="p-custom">Perfecto para empezar.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>✔ 1 vino tinto por mes</li>
+          <li>✔ Envio gratis</li>
+          <li>✔ Fichas de cata impresas</li>
+          <li>✔ Máscaras para degustación</li>
+          <li>✔ 10% off en vinotecas asociadas</li>
+          <li class="tachado">✘ 1 queso artesanal</li>
+          <li class="tachado">✘ 1 snack gourmet de estación</li>
+          <li class="tachado">✘ 2 copas de vidrio</li>
+        </ul>
+
+        <!-- Título y precio -->
+        <p class="precios" style="color:#288b8d ;">$49.000 <small>/ mes</small></p>
+
+        <!-- Botón CTA -->
+       <a href="paginadetalle.html" class="btn btn-dark" style="background-color: #120c00; color: #ffffff;">Ver más</a>
+      </div>
+    </div>
+
+    <!-- Card: Plan Pro (Recomendado) -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100 border border-primary" style="background-color:#efeded;">
+        
+         <!-- Imagen ilustrativa -->
+        <img src="imagenes/img leon.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
+
+        <!-- Imagen ilustrativa -->
+        <img src="imagenes/caja leon-24.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
+
+        <!-- Descripción -->
+        <p class="p-custom">Ideal para quienes buscan más.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>✔ 2 vinos tintos por mes</li>
+          <li>✔ Envio gratis</li>
+          <li>✔ Fichas de cata impresas</li>
+          <li>✔ Máscaras para degustación</li>
+          <li>✔ 10% off en vinotecas asociadas</li>
+          <li>✔ 1 queso artesanal</li>
+          <li class="tachado">✘ 1 snack gourmet de estación</li>
+          <li class="tachado">✘ 2 copas de vidrio</li>
+        </ul>
+
+        <!-- Título y precio -->
+       <p class="precios" style="color: #f297b3;">$88.000 <small>/ mes</small></p>
+
+        <!-- Botón CTA -->
+      <a href="paginadetalle.html" class="btn btn-dark" style="background-color: #000000;">Ver más</a>
+      </div>
+    </div>
+
+    <!-- Card: Plan Full -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100" style="background-color:#efeded;">
+        
+ <!-- Imagen ilustrativa -->
+        <img src="imagenes//img bear.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
+
+        <!-- Imagen ilustrativa -->
+        <img src="imagenes/caja oso.png" class="img-fluid img-rounded my-3" alt="Plan Full">
+
+        <!-- Descripción -->
+        <p class="p-custom">La experiencia completa.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>✔ 2 vinos tintos + 1 vino blanco</li>
+          <li>✔ Envio gratis</li>
+          <li>✔ Fichas de cata impresas</li>
+          <li>✔ Máscaras para degustación</li>
+          <li>✔ 10% off en vinotecas asociadas</li>
+          <li>✔ 1 queso artesanal</li>
+          <li>✔ 1 snack gourmet de estación</li>
+          <li>✔ 2 copas de vidrio</li>
+        </ul>
+
+        <!-- Título y precio -->
+        <p class="precios" style="color:#e4a203 ;">$100.000 <small>/ mes</small></p>
+
+        <!-- Botón CTA -->
+       <a href="paginadetalle.html" class="btn btn-dark" style="background-color: #000000;">Ver más</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- /PLANES DE SUSCRIPCIÓN -->
+
+
+
+
+
+
+
+
+
+
+<!-- WINESWAP -->
+<section class="wineswap fondo-wineswap">
+  <div class="wineswap-text">
+    <h2>Programa WineSwap</h2>
+    <p class="lead-custom">
+      ¿Te tocó una botella repetida, o creés que no va con tus gustos? <br> Tenemos una plataforma donde los suscriptores puedan intercambiar botellas entre sí. </p>
+  </div>
+  <div class="wineswap-graphic">
+    <img src="imagenes/wineswap.png" alt="Flechas" class="flechas" style="max-width: 400px;">
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- BANNER -->
+<section class="yv-banner">
+  <div class="yv-banner__overlay"></div>
+  <div class="yv-banner__content">
+    <h2 class="yv-banner__title" style="font-size: 3rem;  line-height: 1; padding-bottom: 0px;" >
+      Una nueva excusa<br>para el encuentro.
+    </h2>
+    <div class="linea"></div>
+    <p class="yv-banner__subtitle" style="color: white; padding-top: 0px;">
+      Compartí la experiencia YaVino, degustá entre amigos.
+    </p>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- BODEGAS ASOCIADAS -->
+<section class="brands-section">
+  <div class="brands-container" style="padding: 0px;">
+    <div class="brand"><img src="imagenes/Logo1.png" alt="Sierra Norte"></div>
+    <div class="brand"><img src="imagenes/Logo2.png" alt="Familia Torres"></div>
+    <div class="brand"><img src="imagenes/Logo3.png" alt="Trivento"></div>
+    <div class="brand"><img src="imagenes/Logo4.png" alt="Santa Julia"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- VIDEO -->
+<section class="seccion-video" style="padding-top: 200px; padding-bottom: 150px;">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/WD92DDi_R-8?si=CkYv4fqz6b4nMfSC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+ </iframe>
+
+  <div class="contenido">
+    <h2>Mundo nuevo, lenguaje nuevo</h2>
+    <p>Descubrí el vocabulario esencial del mundo del vino y aprendé a catar como un experto. <br> Mirá este video y llevá tu experiencia con el vino al siguiente nivel. </p>
+    <a href="paginadetalle.html" class="btn btn-dark" style="background-color: #288b8d;">Ver video completo</a>
+  </div>
+</section>
+
+<style>
+  .seccion-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+  }
+  .seccion-video iframe {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 12px;
+  }
+  .seccion-video .contenido {
+    max-width: 500px;
+  }
+  #activarAudio {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #0288d1;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  // Carga de la API de YouTube
+  var tag = document.createElement('script');
+  tag.src = "https://youtu.be/WD92DDi_R-8";
+  document.head.appendChild(tag);
+
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('ytVid', {
+      events: {
+        'onReady': (e) => e.target.playVideo()
+      }
+    });
+  }
+
+  document.getElementById('activarAudio').addEventListener('click', () => {
+    player.unMute();
+    player.setVolume(100);
+    player.playVideo();
+  });
+</script>
+
+
+
+
+
+
+
+
+<!-- EXPERIENCIA SENSORIAL -->
+<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+<section class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <h2>Toda una experiencia sensorial</h2>
+      <p class="lead-custom">En YaVino vivirás una experiencia sensorial única, con la máscara del personaje del mes, podrás despertar a tu “yo salvaje” y potenciar tus sentidos. <br> <br> Al eliminar la vista y la etiqueta, tu olfato y gusto se agudizan, descubriendo matices que a menudo pasan desapercibidos. Solo al final te revelamos la marca y la historia de la botella, para que el placer de sorprenderte sea parte del ritual.</p>
+    </div>
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mt-4 mt-lg-0">
+      <img src="imagenes/img experiencia.png" class="img-fluid img-rounded" alt="Imagen ilustrativa" style="max-height: 420px;">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- COMUNIDAD -->
+<div class="testimonios-section" style="color: black;">
+  <h2>Comunidad</h2>
+  <p style="color: black;" >Conocé la opinión de nuestros suscriptores</p>
+
+  <div class="testimonios-container">
+    <div class="tarjeta">
+      <div class="estrellas">
+        <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
+        <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
+        <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
+        <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
+        <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
+      </div>
+      <p>“Gracias a este servicio, mis cenas ahora tienen otro nivel.”</p>
+      <strong style="color: #737373;">Delfina L.</strong>
+    </div>
+
+    <div class="tarjeta-principal">
+      <div class="estrellas">
+        <img src="imagenes/estrella.png" alt="star" style="width: 40px; height: 40px;">
+        <img src="imagenes/estrella.png" alt="star" style="width: 40px; height: 40px;">
+        <img src="imagenes/estrella.png" alt="star" style="width: 40px; height: 40px;">
+        <img src="imagenes/estrella.png" alt="star" style="width: 40px; height: 40px;">
+        <img src="imagenes/estrella.png" alt="star" style="width: 40px; height: 40px;">
+      </div>
+      <p style="color: #000000;">“La presentación es sobria y elegante, ideal también para regalar.”</p>
+      <strong>Juan Pablo S.</strong>
+    </div>
+
+    <div class="tarjeta">
+      <div class="estrellas">
+        <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
+        <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
+        <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
+        <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
+      </div>
+      <p >“La selección siempre me sorprende y me hace descubrir nuevas bodegas.”</p>
+      <strong style="color: #737373;">Lautaro M.</strong>
+    </div>
+
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- FORMULARIO DE CONTACTO-->
+<div class="contacto">
+  <div class="formulario">
+    <h2>¡Contactános!</h2>
+    <form>
+      <input type="text" placeholder="Nombre y Apellido...">
+      <input type="email" placeholder="Correo electrónico...">
+      <textarea placeholder="Comentarios o dudas..."></textarea>
+      <button type="submit" style="color: #efeded;">Enviar!</button>
+    </form>
+  </div>
+  <div class="imagen-zorro"></div>
+</div>
+
+
+
+
+
+
+<!-- PREGUNTAS FRECUENTES -->
+<section class="faq-section">
+  <h2 style="font-family: 'Poppins', sans-serif; font-weight: bolder;" >Preguntas frecuentes</h2>
+  <div class="faq-container">
+    <div class="faq-item" style="color: #737373;">¿Puedo elegir los vinos que me llegan?</div>
+    <div class="faq-item" style="color: #737373;">¿Qué pasa si no estoy en casa al momento de la entrega?</div>
+    <div class="faq-item" style="color: #737373;">¿Hay compromiso de permanencia?</div>
+    <div class="faq-item" style="color: #737373;">¿Puedo regalar una suscripción?</div>
+    <div class="faq-item" style="color: #737373;">¿Hacen envíos a todo el país?</div>
+    <div class="faq-item" style="color: #737373;">¿Qué hago si tengo botellas duplicadas?</div>
+  </div>
+</section>
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="faq-footer">
+  <h3>YAVINO</h3>
+  <p>BODEGA A DOMICILIO</p>
+  <div class="social-icons">
+    <a xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+    </a>
+<a xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</a>   
+ <a xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+ </a>
+  </div>
+</footer>

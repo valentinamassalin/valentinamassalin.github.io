@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
 /* 1. VARIABLES DE DISEÑO */
 :root {
   --primary-color: #3cb0b2;
-  --secondary-color: #686868;
+  --secondary-color: #7e7e7e;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
-  --font-family-base: 'Poppins', sans-serif;
+  --font-family-base: 'Outfit', sans-serif;
 }
 
 /* 2. ESTILOS GENERALES */
@@ -22,6 +25,7 @@ body {
   background-color: black;
   transition: background-color 0.3s, box-shadow 0.3s;
   padding: 15px 0;
+  font-size: 1rem;
 }
 
 .navbar.scrolled {
@@ -30,6 +34,7 @@ body {
 }
 
 .navbar-brand {
+  font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 1.7rem;
   color: orangered;
@@ -55,29 +60,34 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
+  font-family: "Outfit", sans-serif;
   font-weight: 600;
   line-height: 1.2;
 }
 
 h1 {
+  font-family: "Outfit", sans-serif;
   font-size: 3rem;
   margin-bottom: 20px;
   color: var(--dark-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 
 p {
+  font-family: "Outfit", sans-serif;
   font-size: 1rem;
   color: #6c757d;
 }
 
 /* Botones */
 .btn {
+  font-family: "Outfit", sans-serif;
   border-radius: 50px;
   padding: 10px 30px;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
+  font-size: 1.1rem;
 }
 
 .btn-dark {
@@ -110,14 +120,6 @@ section h2 {
   position: relative;
 }
 
-section h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--primary-color);
-  margin: 20px auto 0;
-}
 
 /* 6. CARDS */
 .card {
@@ -195,12 +197,12 @@ img.rounded-circle {
 
 /* TITULOS */
 .h1-custom {
-  font-size: 3rem;
-  font-weight: 700;
+  font-family: "Outfit", sans-serif;
+  font-size: 8rem;
+  font-weight: 900;
   line-height: 1.2;
   color: black  ;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .h2-custom {
@@ -208,8 +210,9 @@ img.rounded-circle {
   font-weight: 600;
   line-height: 1.3;
   color: var(--black);
-   font-family: 'Poppins', sans-serif; 
+  font-family: 'Outfit', sans-serif; 
   font-weight: bold;
+  padding: 0px 0px 0px 0px;
 }
 
 .h3-custom {
@@ -217,7 +220,7 @@ img.rounded-circle {
   font-weight: 600;
   line-height: 1.4;
   color: var(--dark-color);
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Outfit', sans-serif; 
   font-weight: bold;
 }
 
@@ -228,12 +231,11 @@ img.rounded-circle {
 }
 
 .h5-custom {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 400;
   line-height: 1.4;
-  color: black;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: bold;
+  color: rgb(131, 131, 131);
+  font-family: 'Outfit', sans-serif; 
 }
 
 
@@ -241,13 +243,16 @@ img.rounded-circle {
 .p-custom {
   font-size: 1rem;
   color: var(--secondary-color);
-  line-height: 1.6;
+  line-height: 1.3;
+  padding: 0px 0px 0px 0px;
 }
 
 .lead-custom {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-family: 'Outfit', sans-serif; 
   font-weight: 400;
   color: var(--secondary-color);
+  line-height: 1.3;
 }
 
 /* FONDOS E IMÁGENES */
@@ -295,6 +300,14 @@ img.rounded-circle {
   padding-right: 20px;
 }
 
+
+.section-spacing2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .section-spacing-sm {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -333,50 +346,174 @@ img.rounded-circle {
 
 
 
+/* POR QUE ELEGIRNOS */
+.mancha1 {
+  background-image: url("imagenes/mancha1.png");
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center bottom;
+  min-height: 513px;
+  padding-left: 0px;
+  background-position: left;
+}
 
+
+.why-section {
+      display: flex;
+      align-items: center;
+      padding: 150px;
+      gap: 60px;
+      background-color: #efeded;
+      font-family: Poppins, sans-serif;
+      font-weight: bolder;
+    }
+    .why-image {
+      flex: 1;
+    }
+    .why-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      object-fit: cover;
+    }
+    .why-content {
+      flex: 1;
+    }
+    .why-content h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #111;
+    }
+    .why-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .why-list li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+    .why-list li .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+    .why-list li .text h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #222;
+    }
+    .why-list li .text p {
+      margin: 4px 0 0;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #838282;
+      font-weight: lighter;
+    }
+    @media (max-width: 768px) {
+      .why-section {
+        flex-direction: column;
+        padding: 20px;
+      }
+      .why-image, .why-content {
+        width: 100%;
+      }
+      .why-content h2 {
+        text-align: center;
+      }
+    }
+
+
+
+/*SOBRE NOSOTROS */
+.sobre-nosotros {
+  background-image: url("imagenes/onda1.png");
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center bottom;
+  min-height: 513px;
+  padding-left: 110px;
+}
 
 
 /* PLANES DE SUSCRIPCION */
-.fondo-planes {
-  background-image: url("imagenes/negroo-35.png");
-  background-size: cover;
+.planes {
+  padding-top: 60px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 0px;
+  background-image: url("imagenes/img/ onda1.png") center/contain no-repeat;
   background-repeat: no-repeat;
-  background-position: center top;
 }  
- 
+
+.precios {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}  
+
+
+.tachado {
+  text-decoration: line-through;
+}
+
+
+
+
+
+
+/*WINESWAP */
+.fondo-wineswap {
+  background-image: url("imagenes/onda2.png");
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center top;
+  min-height: 513px;
+}
+
+
 
 
 
 
 /* BANNER */
-
 .yv-banner {
   position: relative;
-  background: url('imagenes/banner.png') center/cover no-repeat;
-  min-height: 100vh;
-  height: 1000px;
+  background: url('imagenes/img\ banner.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0px 0px 0px 0px;
 }
 
 .yv-banner__content {
   position: relative;
-  color: #fff;
+  color: #ffffff;
   max-width: 90%;
-  padding: 0 1rem;
-}
-
-.yv-banner__title {
-  font-size: 2rem;
-  font-weight: 900;
-  margin: 0;
+  font-family: 'Outfit', sans-serif; 
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 .yv-banner__subtitle {
   font-size: 1rem;
   margin: 0.5rem 0 0;
+  font-family: 'Outfit', sans-serif; 
+  padding-top: 0px;
+}
+
+
+.linea {
+  width: 60px;
+  height: 4px;
+  background-color: #de4928;
+  margin: 20px auto;  
+  border-radius: 2px;
 }
 
 /* Versión responsive */
@@ -398,7 +535,47 @@ img.rounded-circle {
 
 
 
+/* BODEGAS ASOCIADAS */
+ .brands-section {
+      padding: 0px 0px 0px 0px;
+      text-align: center;
+    }
+    .brands-section .brands-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 100px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .brands-section .brand {
+      flex: 1 1 150px;
+      max-width: 200px;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+    .brands-section .brand img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .brands-section .brand:hover {
+      opacity: 1;
+    }
 
+    @media (max-width: 768px) {
+      .brands-section {
+        padding: 20px 10px;
+      }
+      .brands-section .brands-container {
+        gap: 0px;
+      }
+      .brands-section .brand {
+        flex: 1 1 120px;
+        max-width: 150px;
+      }
+    }
 
 
 
@@ -407,9 +584,9 @@ img.rounded-circle {
 
 .wineswap {
   background-color: #efeded;
-  padding: 90px 20px;
+  padding: 180px 0px 50px 0px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Outfit', sans-serif; 
 }
 
 .wineswap h2 {
@@ -419,11 +596,11 @@ img.rounded-circle {
 }
 
 .wineswap p {
-  font-size: 1rem;
-  max-width: 600px;
-  margin: 0 auto 0px;
-  line-height: 1.5;
-  color: #000000;
+  font-size: 1.2rem;
+  font-family: 'Outfit', sans-serif; 
+  font-weight: 400;
+  color: var(--secondary-color);
+  line-height: 1.3;
 }
 
 .wineswap-graphic {
@@ -443,18 +620,84 @@ img.rounded-circle {
 
 
 
-/* OPINIONES */
+
+
+/* VIDEO */
+
+ .seccion-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 200px 0px 150px 0px;
+    flex-wrap: wrap;
+  }
+
+  .seccion-video video {
+    width: 100%;
+    max-width: 700px;
+    padding-top: 100px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .seccion-video .contenido {
+    max-width: 6600px;
+  }
+
+  .seccion-video .contenido h2 {
+    margin-top: 0;
+  }
+
+  .seccion-video .contenido button {
+    display: block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .seccion-video {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .seccion-video video {
+      max-width: 100%;
+    }
+
+    .seccion-video .contenido button {
+      margin: 15px auto 0 auto;
+    }
+  }
+
+
+
+
+
+
+
+/* COMUNIDAD */
 
 .testimonios-section {
   text-align: center;
   color: white;
-  padding: 140px 20px;
+  padding: 150px 20px;
 
   /* Fondo con imagen */
- background: url('imagenes/fondo\ comentarios.png') center/cover no-repeat;
+  background: url('imagenes/bosque-32.png') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.fondo-azul {
+  padding: 0px 150px 0px 150px;
 }
 
 .testimonios-container {
@@ -466,11 +709,23 @@ img.rounded-circle {
 }
 
 .tarjeta {
+  background-color: rgb(254, 192, 158);
+  color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  width:300px;
+  height: 50;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.tarjeta-principal {
   background-color: white;
   color: #333;
   padding: 40px;
   border-radius: 10px;
-  width: 300px;
+  width: 400px;
+  height: 200;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
 }
@@ -495,8 +750,8 @@ img.rounded-circle {
 
 .formulario {
   flex: 1;
-  max-width: 500px;
-   margin: 0 auto 0 100px;
+  max-width: 650px;
+   margin: 0 auto 0 180px;
 }
 
 .formulario h2 {
@@ -539,7 +794,7 @@ img.rounded-circle {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  height: 400px;
+  height: 500px;
 }
 
 
@@ -611,6 +866,9 @@ img.rounded-circle {
 .faq-footer h3 {
   color: #de4928;
   margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
 }
 
 .faq-footer p {
@@ -632,6 +890,14 @@ img.rounded-circle {
     flex: 1 1 100%;
   }
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -692,7 +958,7 @@ img.rounded-circle {
 }
 
 .fox-box-text .precio {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
