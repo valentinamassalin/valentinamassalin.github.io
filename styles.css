@@ -346,6 +346,36 @@ img.rounded-circle {
 
 
 
+
+/* GIF */
+.gif-hover .gif-container {
+  position: relative;
+  display: inline-block;
+}
+
+.gif-hover .gif-container .static,
+.gif-hover .gif-container .active {
+  display: block;
+}
+
+.gif-hover .gif-container .active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none; /* para que no interfiera el hover */
+}
+
+.gif-hover .gif-container:hover .active {
+  opacity: 1;
+}
+
+
+
+
+
+
 /* POR QUE ELEGIRNOS */
 .mancha1 {
   background-image: url("imagenes/mancha1.png");
