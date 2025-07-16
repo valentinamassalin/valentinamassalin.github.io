@@ -837,6 +837,8 @@ img.rounded-circle {
 @media (max-width: 768px){
   .sensorial-titulo{
     text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -851,6 +853,8 @@ img.rounded-circle {
 @media (max-width: 768px){
   .sensorial-subtitulo{
     text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
