@@ -56,11 +56,11 @@
 
 
 <!-- HERO -->
-<section class="section-spacing container d-flex align-items-center justify-content-between" style="min-height: 100vh; padding-top: 100px;">
+<section class="hero-principal container d-flex flex-column-reverse align-items-center justify-content-between">
   <div class="row align-items-center">
     <!-- Texto principal -->
     <div class="col-lg-6">
-      <h1 class="h1-custom;" style="color: black; font-weight: 700; padding-bottom: 0px ;">DESCUBRÍ EL MUNDO DEL VINO, UN MES A LA VEZ</h1>
+      <h1 class="h1-custom;" style="color: black; font-weight: 700">DESCUBRÍ EL MUNDO DEL VINO, UN MES A LA VEZ</h1>
       <p class="h5-custom" style="padding-top: 0px;">Conocé los mejores vinos, y descubrí lo que te genera a vos. <br> ¿Te animás a sumarte a la banda? </p>
       <div>
         <a href="paginadetalle.html" class="btn btn-dark" style="background-color: #288b8d;">Unirme al Club</a>
@@ -85,26 +85,32 @@
 
 
 <!-- COMO FUNCIONA YAVINO -->
-<section class="section-spacing container text-center" style="padding-top: 50px;">
+<section class="section-spacing container text-center">
   <h2 class="h2-custom" style="color: black;">¿Cómo funciona YaVino?</h2>
   <div class="row">
     <!-- Tres columnas informativas -->
     <div class="col-md-4 gif-hover">
   <div class="gif-container">
     <img src="imagenes/icono mano.png" alt="Imagen estática" class="img-fluid img-rounded static" style="width:200px; height:200px;">
-    <img src="imagenes/animacion1.gif" alt="GIF animado" class="img-fluid img-rounded active" style="width:200px; height:200px;">
+    <img src="imagenes/hover-gif-celular.gif" alt="GIF animado" class="img-fluid img-rounded active" style="width:200px; height:200px;">
   </div>
   <h4 class="h4-custom" style="color: black;">Suscribite</h4>
   <p class="p-custom">Elegí qué plan se ajusta <br> mejor a tus gustos</p>
 </div>
-    <div class="col-md-4">
-      <img src="imagenes/icono recibi caja.png" class="img-fluid img-rounded" alt="Imagen Hero" style="width: 200px; height: 200px;">
+    <div class="col-md-4  gif-hover">
+  <div class="gif-container">
+    <img src="imagenes/icono recibi caja.png" alt="Imagen estática" class="img-fluid img-rounded static" style="width:200px; height:200px;">
+    <img src="imagenes/hover-gif-caja.gif" alt="GIF animado" class="img-fluid img-rounded active" style="width:200px; height:200px;">
+  </div>
       <h4 class="h4-custom" style="color: black;" >Recibí</h4>
       <p class="p-custom" >Te llega todos los meses <br> a la puerta de tu casa</p>
     </div>
-    <div class="col-md-4">
-     <img src="imagenes/icono disfruta.png" class="img-fluid img-rounded" alt="Imagen Hero" style="width: 200px; height: 200px;">
-      <h4 class="h4-custom" style="color: black;" >Disfrutá</h4>
+     <div class="col-md-4 gif-hover">
+  <div class="gif-container">
+    <img src="imagenes/icono disfruta.png" alt="Imagen estática" class="img-fluid img-rounded static" style="width:200px; height:200px;">
+    <img src="imagenes/hover-gif-copas.gif" alt="GIF animado" class="img-fluid img-rounded active" style="width:200px; height:200px;">
+  </div>
+     <h4 class="h4-custom" style="color: black;" >Disfrutá</h4>
       <p class="p-custom">Degustá desde la <br> comodidad de tu hogar</p>
     </div>
   </div>
@@ -120,33 +126,33 @@
 
 
 <!-- POR QUE ELEGIRNOS -->
-<section class="why-section mancha1">
-  <div class="why-image">
-    <img src="imagenes/imagen brindis.png" alt="Brindis con copas de vino" style="width: 600px; height: 400px; padding-left: 0px;">
+<section class="why-section mancha1 row">
+  <div class="why-image col-6">
+    <img class="img-fluid brindis" src="imagenes/imagen brindis.png" alt="Brindis con copas de vino">
   </div>
 
-  <div class="why-content" >
+  <div class="why-content col-6" >
     <h2 class="h2-custom" style="color: black;">¿Por qué elegirnos?</h2>
     <ul class="why-list">
       <li>
         <img class="icon" src="imagenes/icono tic.png" alt="check" style="width: 50px; height: 50px;">
         <div class="text" style="padding-top: 8px;">
           <h3>Calidad garantizada</h3>
-          <p>Vinos especialmente seleccionados por expertos sommeliers.</p>
+          <p class="lead-custom">Vinos especialmente seleccionados por expertos sommeliers.</p>
         </div>
       </li>
       <li>
         <img class="icon" src="imagenes/icono tic.png" alt="check" style="width: 50px; height: 50px;">
         <div class="text" style="padding-top: 8px;">
           <h3>Contenido exclusivo</h3>
-          <p>Material de cata digital y fichas sensoriales incluido en cada caja, <br> para vivir la experiencia completa.</p>
+          <p class="lead-custom">Material de cata digital y fichas sensoriales incluido en cada caja, <br> para vivir la experiencia completa.</p>
         </div>
       </li>
       <li>
         <img class="icon" src="imagenes/icono tic.png" alt="check" style="width: 50px; height: 50px;">
         <div class="text" style="padding-top: 8px;">
           <h3>¡Envío gratis!</h3>
-          <p>Recibí todos los meses tu caja de vinos directo en tu casa.</p>
+          <p class="lead-custom">Recibí todos los meses tu caja de vinos directo en tu casa.</p>
         </div>
       </li>
     </ul>
@@ -163,15 +169,15 @@
 <!-- SOBRE NOSOTROS -->
 
 <section class="sobre-nosotros" >
-  <div class="row align-items-center container" style="padding: 0px 0px 100px 120px;">
+  <div class="row align-items-center container">
     <!-- Columna de texto -->
     <div class="col-lg-6">
       <h2 class="h2-custom">Sobre Nosotros</h2>
-      <p class="lead-custom" >Somos un club de vinos pensado para quienes disfrutan descubrir nuevas etiquetas sin complicarse. Por eso, cada mes seleccionamos y enviamos vinos únicos, directo a tu puerta. Vos relajate y disfrutá, nosotros nos encargamos de lo demás. <br> <br> Bienvenido al lado simple del vino. Bienvenido a YaVino.</p>
+      <p class="lead-custom">Tomás es el fundador de YaVino y un apasionado del vino. Su recorrido comenzó entre copas, charlas con enólogos y visitas a bodegas. Con los años, entendió que disfrutar del vino no debería ser algo complejo ni exclusivo. Así nació YaVino: un club pensado para hacer del vino una experiencia simple, accesible y disfrutable. <br><br> Hoy, junto a un equipo de sommeliers, Tomás selecciona cada mes vinos únicos que llegan directo a tu puerta. Vos solo tenés que relajarte y disfrutar. Nosotros nos encargamos del resto. <br><br> Bienvenido al lado simple del vino. Bienvenido a YaVino.</p>
     </div>
     <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mt-4 mt-lg-0" >
-      <img src="imagenes/hombre.png" class="img-fluid img-rounded" alt="Imagen ilustrativa" style="width: 500px; height: 500px;">
+    <div class="col-lg-6 text-center mt-4 mt-lg-0">
+      <img src="imagenes/hombre.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
   </div>
 </section>
 
@@ -185,8 +191,8 @@
 
 <!-- PLANES DE SUSCRIPCIÓN -->
 <section class="planes container-fluid text-center" style="background-color: #000000;" >
-  <h2 class="h2-custom" style="color: white;">PLANES DE SUSCRIPCIÓN</h2>
-  <p class="p-custom" style="color: white;">Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
+  <h2 class="h2-custom" style="color:#efeded ;">PLANES DE SUSCRIPCIÓN</h2>
+  <p class="p-custom" style="color:#efeded ;">Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
   
   <div class="row mt-5">
     
@@ -195,18 +201,16 @@
       <div class="card p-4 h-100" style="background-color:#efeded;">
 
         <!-- Imagen ilustrativa -->
-        <img src="imagenes/img fox.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+        <img src="imagenes/caja1.png" alt="Plan Básico" style="padding-top: 0px; padding-bottom: 0px;">
 
-        <!-- Imagen ilustrativa -->
-        <img src="imagenes/caja zorro.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+        <h2 class="h2-custom" style="font-size: 40px; padding-bottom: 0px;">FOX BOX</h2>
 
         <!-- Descripción -->
-        <p class="p-custom">Perfecto para empezar.<br><strong>Incluye:</strong></p>
+        <p class="p-custom" style="padding-top: 0px;">Perfecto para empezar.<br><strong>Incluye:</strong></p>
         
         <!-- Lista de beneficios -->
         <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
           <li>✔ 1 vino tinto por mes</li>
-          <li>✔ Envio gratis</li>
           <li>✔ Fichas de cata impresas</li>
           <li>✔ Máscaras para degustación</li>
           <li>✔ 10% off en vinotecas asociadas</li>
@@ -219,19 +223,18 @@
         <p class="precios" style="color:#288b8d ;">$49.000 <small>/ mes</small></p>
 
         <!-- Botón CTA -->
-       <a href="paginadetalle.html" class="btn btn-dark" style="background-color: #120c00; color: #ffffff;">Ver más</a>
+       <a href="paginadetalle.html" class="btn btn-dark" style="background-color: #120c00; color: #efeded;">Ver más</a>
       </div>
     </div>
 
     <!-- Card: Plan Pro (Recomendado) -->
     <div class="col-md-4 mb-4">
       <div class="card p-4 h-100 border border-primary" style="background-color:#efeded;">
-        
-         <!-- Imagen ilustrativa -->
-        <img src="imagenes/img leon.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
 
         <!-- Imagen ilustrativa -->
-        <img src="imagenes/caja leon-24.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
+        <img src="imagenes/caja2.png" style="padding-top: 0px; padding-bottom: 0px;" alt="Plan Pro">
+
+        <h2 class="h2-custom" style="font-size: 40px; padding-bottom: 0px;">LION BOX</h2>
 
         <!-- Descripción -->
         <p class="p-custom">Ideal para quienes buscan más.<br><strong>Incluye:</strong></p>
@@ -239,7 +242,6 @@
         <!-- Lista de beneficios -->
         <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
           <li>✔ 2 vinos tintos por mes</li>
-          <li>✔ Envio gratis</li>
           <li>✔ Fichas de cata impresas</li>
           <li>✔ Máscaras para degustación</li>
           <li>✔ 10% off en vinotecas asociadas</li>
@@ -261,10 +263,11 @@
       <div class="card p-4 h-100" style="background-color:#efeded;">
         
  <!-- Imagen ilustrativa -->
-        <img src="imagenes//img bear.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
 
         <!-- Imagen ilustrativa -->
-        <img src="imagenes/caja oso.png" class="img-fluid img-rounded my-3" alt="Plan Full">
+        <img src="imagenes/caja3.png" style="padding-top: 0px; padding-bottom: 0px;" alt="Plan Full">
+
+        <h2 class="h2-custom" style="font-size: 40px; padding-bottom: 0px;">BEAR BOX</h2>
 
         <!-- Descripción -->
         <p class="p-custom">La experiencia completa.<br><strong>Incluye:</strong></p>
@@ -272,7 +275,6 @@
         <!-- Lista de beneficios -->
         <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
           <li>✔ 2 vinos tintos + 1 vino blanco</li>
-          <li>✔ Envio gratis</li>
           <li>✔ Fichas de cata impresas</li>
           <li>✔ Máscaras para degustación</li>
           <li>✔ 10% off en vinotecas asociadas</li>
@@ -322,13 +324,13 @@
 
 <!-- BANNER -->
 <section class="yv-banner">
-  <div class="yv-banner__overlay"></div>
-  <div class="yv-banner__content">
-    <h2 class="yv-banner__title" style="font-size: 3rem;  line-height: 1; padding-bottom: 0px;" >
+  <div class="yv-banner-overlay"></div>
+  <div class="yv-banner-content">
+    <h2 class="yv-banner-title">
       Una nueva excusa<br>para el encuentro.
     </h2>
     <div class="linea"></div>
-    <p class="yv-banner__subtitle" style="color: white; padding-top: 0px;">
+    <p class="yv-banner-subtitle" style="color: white; padding-top: 0px;">
       Compartí la experiencia YaVino, degustá entre amigos.
     </p>
   </div>
@@ -358,8 +360,8 @@
 
 
 <!-- VIDEO -->
-<section class="seccion-video" style="padding-top: 200px; padding-bottom: 150px;">
- <iframe width="560" height="315" src="https://www.youtube.com/embed/EczMmUfyiio?si=JkZ4Or1_7pYgUWms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+<section class="seccion-video">
+ <iframe width="600" height="315" src="https://www.youtube.com/embed/EczMmUfyiio?si=JkZ4Or1_7pYgUWms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
  </iframe>
 
   <div class="contenido">
@@ -369,57 +371,6 @@
   </div>
 </section>
 
-<style>
-  .seccion-video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 60px 20px;
-  }
-  .seccion-video iframe {
-    width: 100%;
-    max-width: 560px;
-    border-radius: 12px;
-  }
-  .seccion-video .contenido {
-    max-width: 500px;
-  }
-  #activarAudio {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #0288d1;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-</style>
-
-<script>
-  // Carga de la API de YouTube
-  var tag = document.createElement('script');
-  tag.src = "https://youtu.be/WD92DDi_R-8";
-  document.head.appendChild(tag);
-
-  var player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('ytVid', {
-      events: {
-        'onReady': (e) => e.target.playVideo()
-      }
-    });
-  }
-
-  document.getElementById('activarAudio').addEventListener('click', () => {
-    player.unMute();
-    player.setVolume(100);
-    player.playVideo();
-  });
-</script>
-
-
 
 
 
@@ -427,17 +378,16 @@
 
 
 <!-- EXPERIENCIA SENSORIAL -->
-<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
-<section class="section-spacing container">
+<section class="section-sensorial  mancha2">
   <div class="row align-items-center">
     <!-- Columna de texto -->
     <div class="col-lg-6">
-      <h2>Toda una experiencia sensorial</h2>
-      <p class="lead-custom">En YaVino vivirás una experiencia sensorial única, con la máscara del personaje del mes, podrás despertar a tu “yo salvaje” y potenciar tus sentidos. <br> <br> Al eliminar la vista y la etiqueta, tu olfato y gusto se agudizan, descubriendo matices que a menudo pasan desapercibidos. Solo al final te revelamos la marca y la historia de la botella, para que el placer de sorprenderte sea parte del ritual.</p>
+      <h2 class="sensorial-titulo">Toda una <span style="color:#de4928;"> experiencia sensorial</span></h2>
+      <p class="sensorial-subtitulo">En YaVino vivirás una experiencia sensorial única, con la máscara del personaje del mes, podrás despertar a tu “yo salvaje” y potenciar tus sentidos. <br> <br> Al eliminar la vista y la etiqueta, tu olfato y gusto se agudizan, descubriendo matices que a menudo pasan desapercibidos. Solo al final te revelamos la marca y la historia de la botella, para que el placer de sorprenderte sea parte del ritual.</p>
     </div>
     <!-- Columna de imagen -->
     <div class="col-lg-6 text-center mt-4 mt-lg-0">
-      <img src="imagenes/img experiencia.png" class="img-fluid img-rounded" alt="Imagen ilustrativa" style="max-height: 420px;">
+      <img src="imagenes/experiencia-26.png" class="img-fluid img-rounded" alt="Imagen ilustrativa" style="max-height: 420px;">
     </div>
   </div>
 </section>
@@ -462,7 +412,7 @@
   <h2>Comunidad</h2>
   <p style="color: black;" >Conocé la opinión de nuestros suscriptores</p>
 
-  <div class="testimonios-container">
+  <div class="testimonios-container-detalle">
     <div class="tarjeta">
       <div class="estrellas">
         <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">

@@ -80,6 +80,25 @@ p {
   color: #6c757d;
 }
 
+.hero-principal {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
+@media (max-width: 992px) {
+  .hero-principal {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+  }
+}
+
+
+
 /* Botones */
 .btn {
   font-family: "Outfit", sans-serif;
@@ -255,6 +274,12 @@ img.rounded-circle {
   line-height: 1.3;
 }
 
+@media (max-width: 992px) {
+  .lead-costume {
+    text-align: center;
+  }
+}
+
 /* FONDOS E IMÁGENES */
 .bg-cover {
   background-size: cover;
@@ -325,19 +350,19 @@ img.rounded-circle {
 }
 
 @media screen and (max-width: 992px) {
-  .masonry__container {
+  .masonry-container {
     column-count: 3;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .masonry__container {
+  .masonry-container {
     column-count: 2;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .masonry__container {
+  .masonry-container {
     column-count: 1;
   }
 }
@@ -388,11 +413,27 @@ img.rounded-circle {
 }
 
 
+@media screen and (max-width: 576px) {
+  .mancha1 {
+    padding-left: 0px;
+    background-position: top;
+  }
+}
+
+.brindis {
+  padding-left: 150px;
+}
+
+@media screen and (max-width: 576px) {
+  .brindis {
+    padding-left: 0px;
+    padding-bottom: 50px;
+  }
+}
+
 .why-section {
       display: flex;
       align-items: center;
-      padding: 150px;
-      gap: 60px;
       background-color: #efeded;
       font-family: Poppins, sans-serif;
       font-weight: bolder;
@@ -447,7 +488,9 @@ img.rounded-circle {
     @media (max-width: 768px) {
       .why-section {
         flex-direction: column;
-        padding: 20px;
+        padding-top: 150px;
+        padding-left: 25px;
+        padding-right: 25px;
       }
       .why-image, .why-content {
         width: 100%;
@@ -465,9 +508,22 @@ img.rounded-circle {
   background-repeat: no-repeat;
   background-size: contain; 
   background-position: center bottom;
-  min-height: 513px;
-  padding-left: 110px;
+  min-height: 513px;  
+  text-align: justify;
+  padding-left: 150px;
+  padding-bottom: 200px;
+  
+
+  @media (max-width: 768px) {
+     padding-left: 25px;
+     padding-right: 0px;
+     text-align: center;
+    }
 }
+
+
+
+
 
 
 /* PLANES DE SUSCRIPCION */
@@ -478,6 +534,11 @@ img.rounded-circle {
   padding-bottom: 0px;
   background-image: url("imagenes/img/ onda1.png") center/contain no-repeat;
   background-repeat: no-repeat;
+
+   @media (max-width: 768px) {
+     padding-left: 20px;
+     padding-right: 20px;
+    }
 }  
 
 .precios {
@@ -491,19 +552,92 @@ img.rounded-circle {
   text-decoration: line-through;
 }
 
+.cajas {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}  
 
 
 
 
 
-/*WINESWAP */
+
+
+/* WINESWAP */
+
+.wineswap {
+  padding: 180px 0px 50px 0px;
+  text-align: center;
+  font-family: 'Outfit', sans-serif; 
+}
+
+@media (max-width: 768px) {
+   .wineswap {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 25px;
+   }
+}
+
+.wineswap h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.wineswap p {
+  font-size: 1.2rem;
+  font-family: 'Outfit', sans-serif; 
+  font-weight: 400;
+  color: var(--secondary-color);
+  line-height: 1.3;
+}
+
+.wineswap-graphic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+   .wineswap-graphic {
+   padding-top: 30px;
+   padding-bottom: 50px;
+   padding-left: 20px;
+   max-width: 400px;
+   }
+}
+
+
+.wineswap-graphic img {
+  max-width: 100px;
+  height: auto;
+}
+
+
+
 .fondo-wineswap {
   background-image: url("imagenes/onda2.png");
   background-repeat: no-repeat;
   background-size: contain; 
   background-position: center top;
   min-height: 513px;
+
+@media (max-width: 768px) {
+   padding-top: 150px;
+   padding-bottom: 50px;
+   padding-left: 25px;;
+  }
 }
+
+
+
+
+
+
 
 
 
@@ -518,10 +652,18 @@ img.rounded-circle {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0px 0px 0px 0px;
+  padding: 200px 0px 150px 0px;
 }
 
-.yv-banner__content {
+@media (max-width: 768px) {
+  .yv-banner {
+  padding-top: 0px;
+   padding-bottom: 0px;
+  }
+}
+
+
+.yv-banner-content {
   position: relative;
   color: #ffffff;
   max-width: 90%;
@@ -530,13 +672,39 @@ img.rounded-circle {
   padding-top: 0px;
 }
 
-.yv-banner__subtitle {
-  font-size: 1rem;
+@media (max-width: 768px) {
+  .yv-banner-content {
+    padding-top: 50px;
+   padding-bottom: 50px;
+  }
+}
+
+.yv-banner-subtitle {
+  font-size: 1.2rem;
   margin: 0.5rem 0 0;
   font-family: 'Outfit', sans-serif; 
   padding-top: 0px;
 }
 
+@media (max-width: 768px) {
+  .yv-banner-subtitle {
+    font-size: 1rem;
+  }
+}
+
+.yv-banner-title {
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0.5rem 0 0;
+  font-family: 'Outfit', sans-serif; 
+  padding-top: 0px;
+}
+
+@media (max-width: 768px) {
+  .yv-banner-title {
+    font-size: 2.5rem;
+  }
+}
 
 .linea {
   width: 60px;
@@ -544,19 +712,6 @@ img.rounded-circle {
   background-color: #de4928;
   margin: 20px auto;  
   border-radius: 2px;
-}
-
-/* Versión responsive */
-@media (min-width: 768px) {
-  .yv-banner {
-    height: 500px;
-  }
-  .yv-banner__title {
-    font-size: 2.5rem;
-  }
-  .yv-banner__subtitle {
-    font-size: 1.2rem;
-  }
 }
 
 
@@ -597,9 +752,10 @@ img.rounded-circle {
     @media (max-width: 768px) {
       .brands-section {
         padding: 20px 10px;
+        padding-bottom: 0px;
       }
       .brands-section .brands-container {
-        gap: 0px;
+        gap: 20px;
       }
       .brands-section .brand {
         flex: 1 1 120px;
@@ -610,86 +766,38 @@ img.rounded-circle {
 
 
 
-/* WINESWAP */
-
-.wineswap {
-  background-color: #efeded;
-  padding: 180px 0px 50px 0px;
-  text-align: center;
-  font-family: 'Outfit', sans-serif; 
-}
-
-.wineswap h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-
-.wineswap p {
-  font-size: 1.2rem;
-  font-family: 'Outfit', sans-serif; 
-  font-weight: 400;
-  color: var(--secondary-color);
-  line-height: 1.3;
-}
-
-.wineswap-graphic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.wineswap-graphic img {
-  max-width: 100px;
-  height: auto;
-}
-
-
-
-
-
 
 
 /* VIDEO */
-
  .seccion-video {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    padding: 200px 0px 150px 0px;
+    gap: 100px;
     flex-wrap: wrap;
+    padding-top: 200px;
+    padding-left: 0px;
   }
 
-  .seccion-video video {
+  .seccion-video iframe {
     width: 100%;
-    max-width: 700px;
-    padding-top: 100px;
+    max-width: 560px;
     border-radius: 12px;
-    cursor: pointer;
   }
-
   .seccion-video .contenido {
-    max-width: 6600px;
+    max-width: 800px;
   }
-
-  .seccion-video .contenido h2 {
-    margin-top: 0;
-  }
-
-  .seccion-video .contenido button {
-    display: block;
+  #activarAudio {
     margin-top: 15px;
-    padding: 12px 24px;
-    font-size: 16px;
-    background-color: #000;
+    padding: 10px 20px;
+    background: #0288d1;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
   }
+
+
 
   @media (max-width: 768px) {
     .seccion-video {
@@ -705,6 +813,69 @@ img.rounded-circle {
       margin: 15px auto 0 auto;
     }
   }
+
+
+
+
+
+
+/* EXPERIENCIA SENSORIAL */
+  .section-sensorial {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sensorial-titulo{
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000;
+}
+
+@media (max-width: 768px){
+  .sensorial-titulo{
+    text-align: center;
+  }
+}
+
+.sensorial-subtitulo{
+  font-size: 1.1rem;
+  font-family: 'Outfit', sans-serif; 
+  font-weight: 400;
+  color: var(--secondary-color);
+  line-height: 1.3;
+}
+
+@media (max-width: 768px){
+  .sensorial-subtitulo{
+    text-align: center;
+  }
+}
+
+
+
+.mancha2 {
+  background-image: url("imagenes/mancha2.png");
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center bottom;
+  min-height: 513px;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-position: right;
+}
+
+
+@media screen and (max-width: 576px) {
+  .mancha2 {
+    padding-left: 0px;
+    background-position: top;
+    padding-right: 0px;
+  }
+}
+
 
 
 
@@ -778,10 +949,23 @@ img.rounded-circle {
   font-family: sans-serif;
 }
 
+@media (max-width: 768px){
+  .contacto{
+    padding-top: 30px;
+  }
+}
+
+
 .formulario {
   flex: 1;
   max-width: 650px;
    margin: 0 auto 0 180px;
+}
+
+@media (max-width: 768px){
+  .formulario{
+    margin: 0 auto 0 0px
+  }
 }
 
 .formulario h2 {
@@ -881,6 +1065,8 @@ img.rounded-circle {
 
 
 
+
+
 /* --- Footer Section --- */
 .faq-footer {
   background-color: #0a0e0d; /* negro real */
@@ -932,11 +1118,35 @@ img.rounded-circle {
 
 
 
-/* Hero Pagina Detalle */
-.fox-box-section {
-  padding: 3rem 1rem;
-  background-color: #f8f9fa;
+/* HERO PAGINA DETALLE */
+.hero-detalle {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+@media (max-width: 768px){
+  .hero-detalle{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+
+
+.img-hero-detalle {
+  padding-top: 50px;
+  padding-right: 150px;
+}
+
+@media (max-width: 768px){
+  .img-hero-detalle{
+    padding-right: 25px;
+  }
+}
+
+
 
 .fox-box-container {
   display: flex;
@@ -952,6 +1162,7 @@ img.rounded-circle {
 .fox-box-text {
   flex: 1;
   min-width: 280px;
+  padding-left: 150px;
 }
 
 .fox-box-text h1 {
@@ -1017,6 +1228,11 @@ img.rounded-circle {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+   .fox-box-text  {
+    padding-left: 25px;
+    padding-top: 50px;
+  }
+  
   .fox-box-container {
     flex-direction: column;
     text-align: center;
@@ -1027,6 +1243,184 @@ img.rounded-circle {
   }
 
   .fox-box-text .precio {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 }
+
+
+
+
+
+
+/* QUE INCLUYE? */
+.que-incluye {
+  padding-top: 100px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px){
+  .que-incluye{
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+}
+
+
+
+
+
+/* ENVIOS */
+.envios {
+  padding-top: 150px;
+  padding-left: 150px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 768px){
+  .envios{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 45px;
+    padding-right: 25px;
+  }
+}
+
+.envios-img {
+  max-height: 600px;
+}
+
+@media (max-width: 768px){
+  .envios-img{
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+}
+
+
+
+
+
+/* WINESWAP */
+.wine-detalle {
+  padding-top: 0px;
+  padding-bottom: 100px;
+  padding-left: 200px;
+  padding-right: 150px;
+}
+
+@media (max-width: 768px){
+  .wine-detalle{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+  }
+}
+
+.wine-img {
+  width: 500px;
+  height: 500px;
+}
+
+@media (max-width: 768px){
+  .wine-img{
+    width: auto;
+    height: auto;
+  }
+}
+
+
+
+
+/* TESTIMONIOS */
+
+.testimonios-section-detalle {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 150px 20px;
+
+  /* Fondo con imagen */
+  background: url('imagenes/testimonios.png') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.testimonios-container-detalle {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.tarjeta-detalle {
+  background-color: rgb(255, 210, 233);
+  color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  width:300px;
+  height: 50;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.tarjeta-principal-detalle {
+  background-color: rgb(255, 255, 255);
+  color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  width: 400px;
+  height: 200;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.estrellas img {
+  width: 0px;
+  margin: 0px;
+}
+
+
+
+
+
+/* METODOS DE PAGO */
+.metodos-pago {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px){
+  .metodos-pago{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+  }
+}
+
+
+.planes-detalle {
+  padding-top: 60px;
+  padding-left: 450px;
+  padding-right: 450px;
+  padding-bottom: 0px;
+  background-image: url("imagenes/img/ onda1.png") center/contain no-repeat;
+  background-repeat: no-repeat;
+
+   @media (max-width: 768px) {
+     padding-left: 20px;
+     padding-right: 20px;
+    }
+}  
+

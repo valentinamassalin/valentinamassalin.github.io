@@ -46,36 +46,40 @@
 
 
 <!-- HERO PAGINA DETALLE -->
-<section class="section-spacing container d-flex align-items-center justify-content-between" style="min-height: 100vh; padding-top: 100px;">
-  <div class="row align-items-center">
+<section class="row hero-detalle d-flex align-items-center justify-content-between">
+  <div class="col-lg-6 align-items-center">
     <!-- Texto principal -->
    <div class="fox-box-text">
       <h1>LION BOX</h1>
-      <ul style="color: dimgrey;">
-        <li><a href="#">2 vinos tintos sofisticados por mes</a></li>
-        <li> Envío gratis</li>
-        <li> Curaduría temática con fichas sensoriales</li>
-        <li> Máscaras para degustación</li>
-        <li> Fichas de cata impresas + QR a video de sommelier</li>
-        <li> Cupón 10% de descuento en vinotecas asociadas</li>
-        <li> Programa <em>WineSwap</em></li>
+      <ul style=>
+        <li class="lead-custom"><a href="#">2 vinos tintos sofisticados por mes</a></li>
+        <li class="lead-custom"> Envío gratis</li>
+        <li class="lead-custom"> Curaduría temática con fichas sensoriales</li>
+        <li class="lead-custom"> Máscaras para degustación</li>
+        <li class="lead-custom"> Fichas de cata impresas + QR a video de sommelier</li>
+        <li class="lead-custom"> Cupón 10% de descuento en vinotecas asociadas</li>
+        <li class="lead-custom"> Programa <em>WineSwap</em></li>
       </ul>
       <p class="precio" style="color: black;"><strong>$88.000</strong> / por mes</p>
     </div>
-      <div class="d-flex gap-3 mt-4">
-        <a href="#" class="btn btn-dark" style="background-color:#288b8d; color: #ffffff;">Suscribirme</a>
+      <div class="fox-box-text">
+        <a href="Pagina Principal.html" class="btn btn-dark" style="background-color:#288b8d; color: #ffffff;">Suscribirme</a>
       </div>
     </div>
     <!-- Imagen destacada -->
     <div class="col-lg-6 text-center">
-      <img src="imagenes/herodetalle.png" class="img-fluid img-rounded" alt="Imagen Hero">
+      <img src="imagenes/herodetalle.png" class="img-fluid img-rounded img-hero-detalle" alt="Imagen Hero">
     </div>
   </div>
 </section>
 <!-- /HERO -->
 
-<!-- ABOUT: Sección sobre nosotros -->
-<section class="section-spacing container text-center">
+
+
+
+
+<!-- QUE INCLUYE? -->
+<section class="que-incluye container text-center">
   <h2 class="h2-custom">¿Qué incluye?</h2>
   <div class="row">
     <!-- Tres columnas informativas -->
@@ -100,17 +104,21 @@
 <!-- /ABOUT -->
 
 
+
+
+
+
 <!-- ENVIOS -->
-<section class="section-spacing container" style="padding: 0px 150px 0px 150px;">
+<section class="envios">
   <div class="row align-items-center">
     <!-- Columna de imagen -->
     <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="imagenes/icono envios.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+      <img src="imagenes/icono envios.png" class="envios-img img-fluid img-rounded" alt="Imagen ilustrativa">
     </div>
     <!-- Columna de texto -->
     <div class="col-lg-6">
       <h2 class="h2-custom">Sistema de Envíos</h2>
-      <ul class="p-custom" style="padding-left: 10px;">
+      <ul class="lead-custom" style="padding-left: 10px;">
         <li>Envío gratis</li>
         <li>Llegamos a todo el pais</li>
         <li>Elegí la semana del mes en la que querés recibir tu caja</li>
@@ -121,8 +129,11 @@
 </section>
 
 
+
+
+
 <!-- WINESWAP -->
-<section class="section-spacing container-fluid fondo-azul" style="padding-bottom: 100px;">
+<section class="wine-detalle container-fluid">
   <div class="row align-items-center">
     <!-- Columna de texto -->
     <div class="col-lg-6">
@@ -131,8 +142,8 @@
      <a href="paginadetalle.html" class="btn btn-dark" style="background-color:#288b8d; color: #ffffff;">Intercambiar</a>
     </div>
     <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mt-4 mt-lg-0">
-      <img src="imagenes/wineswap.png" class="img-fluid img-rounded" alt="Imagen ilustrativa" style="width: 500px; height: 500px;">
+    <div class="wine-img col-lg-6 text-center mt-4 mt-lg-0">
+      <img src="imagenes/wineswap.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
   </div>
    
 </section>
@@ -144,13 +155,13 @@
 
 
 
-<!-- OPINIONES -->
-<div class="testimonios-section" style="color: black;">
-  <h2>Comunidad</h2>
-  <p style="color: black;" >Conocé la opinión de nuestros suscriptores</p>
+<!-- TESTIMONIOS DETALLE -->
+<div class="testimonios-section-detalle">
+  <h2>Testimonios</h2>
+  <p class="lead-custom" style="color: black;">Ellos ya probaron este plan y lo recomiendan</p>
 
-  <div class="testimonios-container">
-    <div class="tarjeta">
+  <div class="testimonios-container-detalle">
+    <div class="tarjeta-detalle">
       <div class="estrellas">
         <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
         <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
@@ -158,11 +169,11 @@
         <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
         <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
       </div>
-      <p>“Gracias a este servicio, mis cenas ahora tienen otro nivel.”</p>
-      <strong style="color: #737373;">Delfina L.</strong>
+      <p>“Hace poco me cambie del Fox Box al Lion Box y me encantó. El queso para acompañar los vinos hace la diferencia.”</p>
+      <strong style="color: #737373;">Diego L.</strong>
     </div>
 
-    <div class="tarjeta-principal">
+    <div class="tarjeta-principal-detalle">
       <div class="estrellas">
         <img src="imagenes/estrella.png" alt="star" style="width: 40px; height: 40px;">
         <img src="imagenes/estrella.png" alt="star" style="width: 40px; height: 40px;">
@@ -170,19 +181,20 @@
         <img src="imagenes/estrella.png" alt="star" style="width: 40px; height: 40px;">
         <img src="imagenes/estrella.png" alt="star" style="width: 40px; height: 40px;">
       </div>
-      <p style="color: #000000;">“La presentación es sobria y elegante, ideal también para regalar.”</p>
-      <strong>Juan Pablo S.</strong>
+      <p style="color: #000000;">“La presentación del Lion Box es impecable: el diseño, las máscaras para degustar, todo cuidado al detalle. Lo regalé una vez y fue un éxito total.”</p>
+      <strong>Juanma</strong>
     </div>
 
-    <div class="tarjeta">
+    <div class="tarjeta-detalle">
       <div class="estrellas">
         <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
         <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
         <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
         <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
+        <img src="imagenes/estrella.png" alt="star" style="width: 30px; height: 30px;">
       </div>
-      <p >“La selección siempre me sorprende y me hace descubrir nuevas bodegas.”</p>
-      <strong style="color: #737373;">Lautaro M.</strong>
+      <p >“Con el Lion Box descubrí etiquetas que no se consiguen fácil. Me encanta la curaduría y el acceso a los videos con sommeliers.”</p>
+      <strong style="color: #737373;">Agustin R.</strong>
     </div>
 
     
@@ -193,12 +205,8 @@
 
 
 
-
-
-
-
 <!-- METODOS DE PAGO -->
-<section class="section-spacing container text-center">
+<section class="metodos-pago container text-center">
   <h2 class="h2-custom">Métodos de Pago</h2>
   <div class="row">
     <!-- Tres columnas informativas -->
@@ -226,7 +234,7 @@
 
 
 <!-- PLANES DE SUSCRIPCIÓN -->
-<section class="planes container-fluid text-center" style="background-color: #000000;">
+<section class="planes-detalle container-fluid text-center" style="background-color: #000000;">
   <h2 class="h2-custom" style="color: white;">OTROS PLANES</h2>
   <p class="p-custom" style="color: white;">Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
   
@@ -235,9 +243,10 @@
     <!-- Card: Plan Básico -->
     <div class="col-md-6 mb-4">
       <div class="card p-4 h-100" style="background-color:#efeded;">
+        
+      <img src="imagenes/caja1.png" alt="Plan Básico" style="padding-top: 0px; padding-bottom: 0px;">
 
-        <!-- Imagen ilustrativa -->
-        <img src="imagenes/img fox.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+       <h2 class="h2-custom" style="font-size: 50px; padding-bottom: 0px;">BEAR BOX</h2>
 
         <!-- Descripción -->
         <p class="p-custom">Perfecto para empezar.<br><strong>Incluye:</strong></p>
@@ -245,7 +254,6 @@
         <!-- Lista de beneficios -->
         <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
           <li>✔ 1 vino tinto por mes</li>
-          <li>✔ Envio gratis</li>
           <li>✔ Fichas de cata impresas</li>
           <li>✔ Máscaras para degustación</li>
           <li>✔ 10% off en vinotecas asociadas</li>
@@ -269,7 +277,9 @@
       <div class="card p-4 h-100" style="background-color:#efeded;">
         
  <!-- Imagen ilustrativa -->
-        <img src="imagenes//img bear.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
+        <img src="imagenes/caja3.png" style="padding-top: 0px; padding-bottom: 0px;" alt="Plan Full">
+
+        <h2 class="h2-custom" style="font-size: 50px; padding-bottom: 0px;">BEAR BOX</h2>
 
 
         <!-- Descripción -->
@@ -278,7 +288,6 @@
         <!-- Lista de beneficios -->
         <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
           <li>✔ 2 vinos tintos + 1 vino blanco</li>
-          <li>✔ Envio gratis</li>
           <li>✔ Fichas de cata impresas</li>
           <li>✔ Máscaras para degustación</li>
           <li>✔ 10% off en vinotecas asociadas</li>
